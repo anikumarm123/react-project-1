@@ -1,0 +1,37 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: chocolate;
+  padding-top: 20px;
+}
+.logo img{
+
+  width: 150px;
+  height: 60px;
+  margin-left: 100px;
+}
+.img-sty img{
+  width: 320px;
+  height: 200px;
+  padding-bottom: 10px;
+  
+}
+.img-sty{
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 200px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.main-flx{
+  display: flex;
+}
+.icon i{
+  padding-left: 20px;
+}
+.item-flx{
+  display: flex;
+  flex-wrap: wrap;
+}
