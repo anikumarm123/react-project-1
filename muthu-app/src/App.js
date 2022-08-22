@@ -1,16 +1,18 @@
 //import logo from './logo.svg';
 import './App.css';
 import Header from '../src/header/header';
-import Nav_bar from './nav-bar/nav-bar';
+import Navbar from './nav-bar/nav-bar';
 import Props from './content/props';
 import Fooder from './fooder/fooder';
+import State from './state';
 
 function App() {
   return (
     <div><Header/>
-    <Nav_bar/>
+    <Navbar/> 
     <Props/>
     <Fooder/>
+    <State/>
     </div>
   )
 }

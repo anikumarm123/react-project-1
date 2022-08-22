@@ -2,17 +2,18 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  background-color: chocolate;
+  background-color:#d0c962;
   padding-top: 20px;
 }
 .logo img{
 
-  width: 150px;
+  width: 140px;
   height: 60px;
   margin-left: 100px;
 }
+
 .img-sty img{
-  width: 320px;
+  width: 300px;
   height: 200px;
   padding-bottom: 10px;
   
@@ -20,12 +21,14 @@
 .img-sty{
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
-  height: 200px;
+  width: 300px;
+  height: 230px;
   padding: 20px;
-  margin-bottom: 30px;
+  margin:30px;
+  box-shadow: 1px 2px 10px ;
+  background-color: rgb(246, 174, 122);
 }
-.main-flx{
+.main{
   display: flex;
 }
 .icon i{
@@ -34,4 +37,35 @@
 .item-flx{
   display: flex;
   flex-wrap: wrap;
+}
+.order{
+  width: 250px;
+  height: 990px;
+  background-color:rgb(246, 174, 122);
+}
+.menu{
+  width: 250px;
+  background-color:rgb(246, 174, 122);
+}
+/* ------------state css ------------------ */
+
+.state-item{
+  text-align: center;
+  line-height: 30px;
+  background-color: #d0c962;
+  margin: 20px;
+}
+.state-flx{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  background-color: antiquewhite;
+  padding-top: 50px;
+
+}
+.state-btn{
+  padding: 10px 20px;
+}
+.state-btn:hover{
+  background-color: rgb(214, 112, 112);
 }

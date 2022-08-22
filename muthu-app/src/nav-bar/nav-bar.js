@@ -1,12 +1,12 @@
 import React from "react";
 
 const sty = { paddingLeft: "20px", fontSize: "30px" };
-const Nav_bar = () => {
+const Navbar = () => {
   return (
-    <div className="content">
+    
     <div className ='nav'>
       <div className="logo">
-        <img src={require("../images/item-1.jpg")} height="70px" />
+        <img src={require("../images/hotel.jpg")}  />        
       </div>
       <div
         style={{
@@ -21,8 +21,8 @@ const Nav_bar = () => {
         <a style={sty}>Order</a>
       </div>
     </div>
-    </div>
+    
   );
 };
 
-export default Nav_bar;
+export default Navbar;

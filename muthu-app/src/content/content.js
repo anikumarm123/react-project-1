@@ -1,6 +1,7 @@
 import React from "react";
 
 const Content = (props) => {
+
   return (
     <div className="img-sty">
       <img src={props.picture}/>
