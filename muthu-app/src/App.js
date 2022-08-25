@@ -4,7 +4,9 @@ import Header from '../src/header/header';
 import Navbar from './nav-bar/nav-bar';
 import Props from './content/props';
 import Fooder from './fooder/fooder';
-import State from './state';
+import Parent  from './StatePractice/Parent';
+
+
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
     <Navbar/> 
     <Props/>
     <Fooder/>
-    <State/>
+    <Parent/>
     </div>
   )
 }

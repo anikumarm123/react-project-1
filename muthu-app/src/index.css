@@ -47,25 +47,24 @@
   width: 250px;
   background-color:rgb(246, 174, 122);
 }
-/* ------------state css ------------------ */
 
-.state-item{
+/* ----------------- state practice-------- */
+
+.main-flx{
+  display: flex;
   text-align: center;
   line-height: 30px;
-  background-color: #d0c962;
-  margin: 20px;
 }
-.state-flx{
+.show-item{
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  background-color: antiquewhite;
-  padding-top: 50px;
-
+  width: 70%;
+  background-color:rgb(195, 234, 117);
 }
-.state-btn{
-  padding: 10px 20px;
+.food{
+  margin: 20px;
+  border: 1px solid ;
 }
-.state-btn:hover{
-  background-color: rgb(214, 112, 112);
+.remove-btn:hover{
+  background-color: rgb(246, 147, 147);
 }
