@@ -68,3 +68,16 @@
 .remove-btn:hover{
   background-color: rgb(246, 147, 147);
 }
+.btn{
+  display: flex;
+  justify-content: space-around;
+}
+.cart{
+  text-align: center;
+  padding-left: 60px;
+}
+.order-item{
+  padding: 20px;
+  background-color: #d0c962;
+  margin: 20px;
+}

@@ -21,7 +21,7 @@ export class Parent extends Component {
   cartFood = (data) => {
     const check = this.state.cartItem.includes(data);
   
-    if (check == false) {
+    if (check === false) {
       var item = this.state.cartItem.concat(data);
       console.log(item);
       this.setState({ cartItem: item });
@@ -32,10 +32,25 @@ export class Parent extends Component {
   removeFum = (d)=>{
 
          var remove = this.state.cartItem.filter( (rom) => {
-          return  rom != d 
+          return  rom !== d 
           })
           console.log(remove);
           this.setState({cartItem:remove});
+  }
+  plusFun =(p)=>{
+     this.setState({qty:p.qty++});   
+  }
+  minusFun =(m)=>{
+    this.setState({qty:m.qty--})
+    if(m.qty === 0){
+      var remove = this.state.cartItem.filter( (rom) => {
+        return  rom !== m
+        })
+        console.log(remove);
+        this.setState({qty:m.qty++})
+        this.setState({cartItem:remove});
+    }
+
   }
   render() {
     return (
@@ -45,10 +60,10 @@ export class Parent extends Component {
             <FoodItems key={index} foods={food} foodItem={this.cartFood} />
           ))}
         </div>
-        <div>
+         <div className="cart">
           <h1>Cart Items</h1>
           {this.state.cartItem.map((food, index) => (
-            <OrderItem key={index} foods={food} removeItem={this.removeFum} />
+            <OrderItem key={index} foods={food} removeItem={this.removeFum} plus={this.plusFun} minus={this.minusFun}/>
           ))}
         </div>
       </div>
